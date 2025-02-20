@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-generate-text-image",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "n8n node to generate text images",
   "keywords": [
     "n8n-community-node-package",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+github.com/adevk/generate-text-image-node"
+    "url": "https://github.com/adevk/generate-text-image-node.git"
   },
   "packageManager": "pnpm@9.15.3",
   "main": "index.js",
