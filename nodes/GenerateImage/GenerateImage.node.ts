@@ -1,3 +1,6 @@
+/* eslint-disable n8n-nodes-base/node-param-options-type-unsorted-items */
+/* eslint-disable n8n-nodes-base/node-class-description-outputs-wrong */
+/* eslint-disable n8n-nodes-base/node-class-description-inputs-wrong-regular-node */
 import {
 	IDataObject,
 	IExecuteFunctions,
@@ -63,7 +66,7 @@ export class GenerateImage implements INodeType {
 				default: 150,
 			},
 			{
-				displayName: 'Background Color (hexadecimal)',
+				displayName: 'Background color',
 				name: 'backgroundColor',
 				type: 'color',
 				required: true,

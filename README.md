@@ -1,4 +1,4 @@
-# n8n-nodes-_node-name_
+# n8n-nodes-generate-text-image
 
 This is an n8n community node. It lets you use the dummyjson api to generate text images in your n8n workflows.
 
