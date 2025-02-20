@@ -1,0 +1,55 @@
+{
+  "name": "n8n-nodes-generate-text-image",
+  "version": "0.1.0",
+  "description": "n8n node to generate text images",
+  "keywords": [
+    "n8n-community-node-package",
+    "generate text image"
+  ],
+  "license": "AGPL-3.0",
+  "author": {
+    "name": "Akram",
+    "email": "akram@digispruce.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mynodes/generate-image.git"
+  },
+  "packageManager": "pnpm@9.15.3",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "build": "tsc && gulp build:icons",
+    "dev": "tsc --watch",
+    "format": "prettier nodes credentials --write",
+    "lint": "eslint nodes credentials package.json",
+    "lintfix": "eslint nodes credentials package.json --fix",
+    "prepublishOnly": "pnpm build && pnpm lint -c .eslintrc.prepublish.js nodes credentials package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/GenerateImage.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/GenerateImage/GenerateImage.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^7.15.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-n8n-nodes-base": "^1.16.1",
+    "gulp": "^4.0.2",
+    "prettier": "^3.3.2",
+    "typescript": "^5.5.3"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  },
+  "dependencies": {
+    "sqlite3": "^5.1.7"
+  }
+}
